@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5;
+  color: #333;
+}
+
+.navbar {
+  background-color: #d81b60;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+}
+
+.logo span {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fce4ec;
+}
+
+.catalogo {
+  padding: 20px;
+  text-align: center;
+}
+
+.catalogo h2 {
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.servicio {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.servicio:hover {
+  transform: scale(1.05);
+}
+
+.servicio img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.contacto {
+  background-color: #f8bbd0;
+  text-align: center;
+  padding: 30px;
+}
+
+.contacto a {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 10px auto;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.boton-whatsapp {
+  background-color: #25d366;
+  color: white;
+}
+
+.boton-facebook {
+  background-color: #3b5998;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fce4ec;
+  font-size: 0.9em;
+}

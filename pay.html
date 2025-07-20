@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formas de Pago – Jana Nails & Hair</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pay.css">
+</head>
+<body>
+
+  <nav class="navbar">
+  <div class="logo">
+    <img src="./images/Jana Guzmán.png" alt="Logotipo Jana Nails">
+    <span>Jana Nails &amp; Hair</span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="pay.html">Formas de Pago</a></li>
+    <li><a href="###">Contacto</a></li>
+  </ul>
+</nav>
+
+  <header class="hero">
+    <h1>💳 Formas de Pago</h1>
+    <p>Elige cómo pagar tu servicio favorito</p>
+  </header>
+
+  <section class="info-pago">
+    <h2>Información de tarjeta</h2>
+    <div class="tarjeta">
+  <h3>BanCoppel</h3>
+  <p><strong>Número de tarjeta:</strong></p>
+  <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 15px;">
+    <input type="text" id="numeroTarjeta" value="1234 5678 9012 3456" readonly style="padding: 8px; font-size: 1em; border: 1px solid #ccc; border-radius: 5px; width: 230px;">
+    <button onclick="copiarTarjeta()" style="padding: 8px 12px; background-color: #333; color: white; border: none; border-radius: 5px; cursor: pointer;">📋 Copiar</button>
+  </div>
+  <p><strong>Titular:</strong> Jana Nails</p>
+  <p>Envía el comprobante por WhatsApp después de realizar el pago.</p>
+</div>
+  </section>
+
+  <section class="metodos-pago">
+    <h2>¿Qué tarjetas aceptamos?</h2>
+    <p>A través de <strong>Mercado Pago</strong> puedes pagar con:</p>
+    <ul>
+      <li>✔️ Visa</li>
+      <li>✔️ Mastercard</li>
+      <li>✔️ American Express</li>
+      <li>✔️ Tarjetas de débito/crédito</li>
+      <li>✔️ Transferencias bancarias SPEI</li>
+    </ul>
+    <img src="img/mercado-pago.png" alt="Tarjetas aceptadas por Mercado Pago" style="max-width: 300px;">
+  </section>
+
+  <section class="contacto" id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes dudas o quieres confirmar tu pago?</p>
+    <a href="https://wa.me/528124247468?text=Hola,%20ya%20realicé%20el%20pago%20para%20mi%20cita%20en%20Jana%20Nails" target="_blank" class="boton-whatsapp">
+      📱 Confirmar pago por WhatsApp
+    </a>
+    <br><br>
+    <a href="https://facebook.com/tuPaginaJanaNails" target="_blank" class="boton-facebook">
+      🔗 Ir a nuestra página de Facebook
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2025 Jana Nails & Hair. Todos los derechos reservados.</p>
+  </footer>
+
+  <div id="toast" class="toast">Número de tarjeta copiado 📋</div>
+
+</body>
+
+<script>
+function copiarTarjeta() {
+  const campo = document.getElementById("numeroTarjeta");
+  campo.select();
+  campo.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+
+  // Mostrar toast
+  const toast = document.getElementById("toast");
+  toast.classList.add("show");
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 2500);
+}
+
+</script>
+</html>

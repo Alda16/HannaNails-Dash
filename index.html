@@ -2,104 +2,92 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Catálogo Hanna Nails 💅</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fff0f5;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #d81b60;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-
-    .catalogo {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-      gap: 20px;
-    }
-
-    .servicio {
-      background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      width: 220px;
-      text-align: center;
-      padding: 10px;
-      transition: transform 0.3s;
-    }
-
-    .servicio:hover {
-      transform: scale(1.05);
-    }
-
-    .servicio img {
-      width: 100%;
-      border-radius: 8px;
-    }
-
-    .nombre {
-      font-weight: bold;
-      margin: 10px 0 5px;
-    }
-
-    .precio {
-      color: #d81b60;
-      font-size: 1.2em;
-      margin-bottom: 5px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px;
-      color: #777;
-      font-size: 0.9em;
-    }
-  </style>
+  <title>Hanna Nails - Catálogo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <header>
-    <h1>Catálogo Hanna Nails</h1>
-    <p>Descubre nuestros estilos y servicios con precios irresistibles</p>
+
+  <nav class="navbar">
+  <div class="logo">
+  <img src="./images/Jana Guzmán.png" alt="Logotipo Jana Nails">
+  <span>Jana Nails &amp; Hair</span>
+</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Catálogo</a></li>
+    <li><a href="pago.html">Formas de Pago</a></li>
+    <li><a href="/##.html">Contacto</a></li>
+  </ul>
+</nav>
+
+  <header class="hero">
+    <h1>Tu salón de belleza de confianza</h1>
+    <p>Explora nuestros servicios y agenda tu cita fácil y rápido</p>
   </header>
 
   <section class="catalogo">
-    <div class="servicio">
-      <img src="./images/flowers.jpg" alt="Manicure clásico">
-      <div class="nombre">Manicure clásico</div>
-      <div class="precio">$180 MXN</div>
-    </div>
-    <div class="servicio">
-      <img src="img/pedicure.jpg" alt="Pedicure spa">
-      <div class="nombre">Pedicure spa</div>
-      <div class="precio">$250 MXN</div>
-    </div>
-    <div class="servicio">
-      <img src="./images/mushrooms-9494682_1280.jpg" alt="Aplicación Gelish">
-      <div class="nombre">Aplicación Gelish</div>
-      <div class="precio">$220 MXN</div>
-    </div>
-    <div class="servicio">
-      <img src="img/uñas.jpg" alt="Uñas acrílicas">
-      <div class="nombre">Uñas acrílicas</div>
-      <div class="precio">$320 MXN</div>
+    <h2>Servicios disponibles</h2>
+    <div class="grid">
+      <div class="servicio">
+        <img src="./images/unas2.jpg" alt="Manicure clásico">
+        <h3>Manicure clásico</h3>
+        <p>$180 MXN</p>
+      </div>
+      <div class="servicio">
+        <img src="./images/unas.jpg" alt="Aplicación Gelish">
+        <h3>Aplicación Gelish</h3>
+        <p>$220 MXN</p>
+      </div>
+      <div class="servicio">
+        <img src="./images/unas2.jpg" alt="Uñas acrílicas">
+        <h3>Uñas acrílicas</h3>
+        <p>$320 MXN</p>
+      </div>
+      <div class="servicio">
+        <img src="./images/unas3.jpg" alt="Pedicure spa">
+        <h3>Pedicure spa</h3>
+        <p>$250 MXN</p>
+      </div>
+      <div class="servicio">
+        <img src="./images/unas2.jpg" alt="Diseño de cejas">
+        <h3>Diseño de cejas</h3>
+        <p>$150 MXN</p>
+      </div>
+      <div class="servicio">
+        <img src="./images/unas3.jpg" alt="Extensión de pestañas">
+        <h3>Extensión de pestañas</h3>
+        <p>$450 MXN</p>
+      </div>
+      <div class="servicio">
+        <img src="./images/unas.jpg" alt="Limpieza facial">
+        <h3>Limpieza facial</h3>
+        <p>$300 MXN</p>
+      </div>
+      <div class="servicio">
+        <img src="./images/unas3.jpg" alt="Peinado express">
+        <h3>Peinado express</h3>
+        <p>$200 MXN</p>
+      </div>
     </div>
   </section>
 
+  <section id="contacto" class="contacto">
+  <h2>Agenda tu cita por WhatsApp</h2>
+  <a href="https://wa.me/528124247468?text=Hola,%20quiero%20agendar%20una%20cita%20con%20Hanna%20Nails" target="_blank"
+     class="boton-whatsapp">
+    📱 Agendar cita por WhatsApp
+  </a>
+
+  <h3 style="margin-top: 30px;">Síguenos en Facebook</h3>
+  <a href="https://facebook.com/tuPaginaHannaNails" target="_blank"
+     class="boton-facebook">
+    🔗 Ver página en Facebook
+  </a>
+</section>
+
   <footer>
-    © 2025 Hanna Nails. Todos los derechos reservados.
+    <p>© 2025 Hanna Nails. Todos los derechos reservados.</p>
   </footer>
+
 </body>
 </html>
