@@ -113,3 +113,86 @@ footer {
   background-color: #fce4ec;
   font-size: 0.9em;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+ .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .nav-links li {
+    width: auto;
+  }
+
+  .logo{
+    display: none;
+  }
+  .logo span {
+    display: none; /* Oculta el texto del logotipo en celular */
+  }
+
+  .logo img {
+    height: 50px; /* Reduce tamaño en móvil */
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .catalogo h2 {
+    font-size: 1.6em;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+  }
+
+  .servicio {
+    padding: 10px;
+  }
+
+  .servicio h3 {
+    font-size: 1em;
+  }
+
+  .servicio p {
+    font-size: 0.9em;
+  }
+
+  .contacto {
+    padding: 20px;
+  }
+
+  .contacto h2 {
+    font-size: 1.5em;
+  }
+
+  .boton-whatsapp,
+  .boton-facebook {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    font-size: 1em;
+    padding: 12px;
+    text-align: center;
+  }
+
+  footer {
+    padding: 15px;
+    font-size: 0.85em;
+  }
+}
